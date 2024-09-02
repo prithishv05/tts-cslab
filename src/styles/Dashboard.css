@@ -1,0 +1,121 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .dashboard-main {
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .date-range-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .date-range-selector label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .date-range-selector input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .dashboard-tables {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dashboard-table {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-table h2 {
+    background: #007bff;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .dashboard-data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dashboard-data-table th,
+  .dashboard-data-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dashboard-data-table th {
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  .dashboard-data-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .dashboard-data-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .date-range-selector {
+      flex-direction: column;
+    }
+  
+    .date-range-selector label {
+      margin-bottom: 10px;
+    }
+  
+    .dashboard-title {
+      font-size: 20px;
+    }
+  
+    .dashboard-data-table th,
+    .dashboard-data-table td {
+      padding: 8px;
+    }
+  }
+  
